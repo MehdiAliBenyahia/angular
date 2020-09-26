@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
@@ -13,10 +14,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CodemirrorModule } from '@ctrl/ngx-codemirror';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CoursComponent } from './components/cours/cours.component';
 import { HelloComponent } from './components/home/hello.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { TestComponent } from './components/test/test.component';
+import { Cours1Component } from './components/cours1/cours1.component';
 
 @NgModule({
   imports: [
@@ -32,6 +35,7 @@ import { TestComponent } from './components/test/test.component';
     MatButtonModule,
     MatExpansionModule,
     MatIconModule,
+    MatCardModule,
     MatListModule,
     MatSidenavModule,
     MatToolbarModule,
@@ -42,6 +46,8 @@ import { TestComponent } from './components/test/test.component';
     NotFoundComponent,
     HomeComponent,
     TestComponent,
+    CoursComponent,
+    Cours1Component,
   ],
   bootstrap: [AppComponent],
 })
